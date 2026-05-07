@@ -98,4 +98,4 @@ jobs:
             ESET-KeyGen_v${{ github.event.inputs.version }}_win32.exe
             ESET-KeyGen_v${{ github.event.inputs.version }}_win64.exe
         env:
-          GITHUB_TOKEN: ${{ secrets.PAT }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
