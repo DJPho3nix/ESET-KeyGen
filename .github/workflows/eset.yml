@@ -17,9 +17,6 @@ jobs:
           KEY_TYPE=--small-business-key
           BRANCH=main
 
-          git clone -b ${BRANCH} https://github.com/ShafiqSadat/ESET-KeyGen.git
-          cd ESET-KeyGen
-
           sudo apt update
           sudo apt install -y python3-pip python3-venv
           python3 -m venv venv
@@ -53,9 +50,6 @@ jobs:
           MAIL=emailfake
           KEY_TYPE=--key
           BRANCH=main
-
-          git clone -b ${BRANCH} https://github.com/ShafiqSadat/ESET-KeyGen.git
-          cd ESET-KeyGen
 
           brew install python
           python3 -m venv venv
