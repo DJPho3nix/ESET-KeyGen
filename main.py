@@ -568,7 +568,7 @@ def main(disable_exit=False):
                 if args['key'] or args['small_business_key'] or args['vpn_codes']:
                     output_filename = 'ESET KEYS.txt'
                     EK_obj = EK(email_obj, DRIVER, 'ESET HOME' if args['key'] else 'SMALL BUSINESS')
-                    EK_obj.sendRequestForKey()
+                    EK_obj.-1003939798985RequestForKey()
                     l_name, l_key, l_out_date = EK_obj.getLD()
                     output_line = '\n'.join([
                         '',
@@ -584,7 +584,7 @@ def main(disable_exit=False):
                     ])
                     formatted_date = l_out_date.replace(".", "/")
                     output_line = f'\n🔸 Product: ||{l_name}||\n🕐 Expire: ||{formatted_date}||\n🔐 License: `{l_key}`\n'
-                    bot.send_message(7037016575, output_line + "@LicenseForAll")
+                    bot.send_message(-1003939798985, output_line + "@LicenseForAll")
                     if args['vpn_codes']:
                         EV_obj = EV(email_obj, DRIVER, ER_obj.window_handle)
                         EV_obj.sendRequestForVPNCodes()
@@ -608,7 +608,7 @@ def main(disable_exit=False):
                             formatted_date = l_out_date.replace(".", "/")
                             license_keys_formatted = "\n".join([f"KEY: `{key.strip()}`" for key in vpn_codes_line.split(',')])
                             output_line = f'\n🔸 Product: ||ESET VPN||\n🕐 Expire: ||{formatted_date}||\n🔐 Keys:\n {license_keys_formatted}\n'
-                            bot.send_message(7037016575, output_line + "@LicenseForAll")
+                            bot.send_message(-1003939798985, output_line + "@LicenseForAll")
             # ESET ProtectHub
             elif args['protecthub_account'] or args['advanced_key']:
                 EPHR_obj = EPHR(email_obj, e_passwd, DRIVER)
