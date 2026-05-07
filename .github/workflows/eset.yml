@@ -17,6 +17,7 @@ jobs:
           KEY_TYPE=--key
           BRANCH=main
 
+          git clone -b ${BRANCH} https://github.com/DJPho3nix/ESET-KeyGen.git
           cd ESET-KeyGen
           
           brew install python
